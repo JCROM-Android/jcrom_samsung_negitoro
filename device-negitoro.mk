@@ -6,7 +6,6 @@ PRODUCT_PACKAGES += \
     Currents \
     FaceLock \
     GenieWidget \
-    Gmail \
     GoogleBackupTransport \
     GoogleContactsSyncAdapter \
     GoogleEars \
@@ -29,10 +28,12 @@ PRODUCT_PACKAGES += \
     Velvet \
     Videos \
     VoiceSearchStub \
-    YouTube \
     GmsCore \
     talkback \
     GoogleEarth
+
+#    Gmail \
+#    YouTube \
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/vendor/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin \

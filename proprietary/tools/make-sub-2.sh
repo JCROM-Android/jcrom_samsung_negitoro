@@ -17,6 +17,7 @@ cp -a ${SRC_SYSTEM}/app/ChromeBookmarksSyncAdapter.apk ${DST_SYSTEM}/app/ChromeB
 cp -a ${SRC_SYSTEM}/app/FaceLock.apk ${DST_SYSTEM}/app/FaceLock/FaceLock.apk
 cp -a ${SRC_SYSTEM}/app/GenieWidget.apk ${DST_SYSTEM}/app/GenieWidget/GenieWidget.apk
 cp -a ${SRC_SYSTEM}/app/Gmail.apk ${DST_SYSTEM}/app/Gmail/Gmail.apk
+cp -a ${SRC_SYSTEM}/app/CalendarGoogle.apk ${DST_SYSTEM}/app/CalendarGoogle/CalendarGoogle.apk
 cp -a ${SRC_SYSTEM}/app/GoogleBackupTransport.apk ${DST_SYSTEM}/app/GoogleBackupTransport/GoogleBackupTransport.apk
 cp -a ${SRC_SYSTEM}/app/GoogleContactsSyncAdapter.apk ${DST_SYSTEM}/app/GoogleContactsSyncAdapter/GoogleContactsSyncAdapter.apk
 cp -a ${SRC_SYSTEM}/app/GoogleEars.apk ${DST_SYSTEM}/app/GoogleEars/GoogleEars.apk

@@ -5,6 +5,7 @@ PRODUCT_PACKAGES += \
     ChromeBookmarksSyncAdapter \
     Currents \
     FaceLock \
+    CalendarGoogle \
     GenieWidget \
     GoogleBackupTransport \
     GoogleContactsSyncAdapter \

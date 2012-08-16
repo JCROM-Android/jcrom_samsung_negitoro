@@ -2,6 +2,9 @@
 SRC_SYSTEM=tmp
 SRC_ORIG_SYSTEM=system
 DST_SYSTEM=../system
+cp -a ${SRC_SYSTEM}/framework/com.google.android.media.effects.jar ${DST_SYSTEM}/framework/com.google.android.media.effects.jar
+cp -a ${SRC_SYSTEM}/framework/com.google.android.maps.jar ${DST_SYSTEM}/framework/com.google.android.maps.jar
+cp -a ${SRC_SYSTEM}/framework/com.google.widevine.software.drm.jar ${DST_SYSTEM}/framework/com.google.widevine.software.drm.jar
 cp -a ${SRC_ORIG_SYSTEM}/app/Books.apk ${DST_SYSTEM}/app/Books/Books.apk
 cp -a ${SRC_ORIG_SYSTEM}/app/Phonesky.apk ${DST_SYSTEM}/app/Phonesky/Phonesky.apk
 cp -a ${SRC_ORIG_SYSTEM}/app/PlusOne.apk ${DST_SYSTEM}/app/PlusOne/PlusOne.apk

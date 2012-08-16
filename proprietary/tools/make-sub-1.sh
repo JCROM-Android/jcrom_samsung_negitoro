@@ -25,13 +25,28 @@ cp -a ${SRC_SYSTEM}/media/video/Sunset.480p.mp4 ${DST_SYSTEM}/media/video/Sunset
 cp -a ${SRC_SYSTEM}/media/LMprec_508.emd ${DST_SYSTEM}/media/LMprec_508.emd
 cp -a ${SRC_SYSTEM}/media/PFFprec_600.emd ${DST_SYSTEM}/media/PFFprec_600.emd
 cp -a ${SRC_SYSTEM}/media/bootanimation.zip ${DST_SYSTEM}/media/bootanimation.zip
+sudo cp -a ${SRC_SYSTEM}/etc/bluetooth/audio.conf ${DST_SYSTEM}/etc/bluetooth/audio.conf
+sudo chown $USER ${DST_SYSTEM}/etc/bluetooth/audio.conf
+sudo chown :$USER ${DST_SYSTEM}/etc/bluetooth/audio.conf
+sudo cp -a ${SRC_SYSTEM}/etc/bluetooth/auto_pairing.conf ${DST_SYSTEM}/etc/bluetooth/auto_pairing.conf
+sudo chown $USER ${DST_SYSTEM}/etc/bluetooth/auto_pairing.conf
+sudo chown :$USER ${DST_SYSTEM}/etc/bluetooth/auto_pairing.conf
+sudo cp -a ${SRC_SYSTEM}/etc/bluetooth/input.conf ${DST_SYSTEM}/etc/bluetooth/input.conf
+sudo chown $USER ${DST_SYSTEM}/etc/bluetooth/input.conf
+sudo chown :$USER ${DST_SYSTEM}/etc/bluetooth/input.conf
+sudo cp -a ${SRC_SYSTEM}/etc/bluetooth/main.conf ${DST_SYSTEM}/etc/bluetooth/main.conf
+sudo chown $USER ${DST_SYSTEM}/etc/bluetooth/main.conf
+sudo chown :$USER ${DST_SYSTEM}/etc/bluetooth/main.conf
+sudo cp -a ${SRC_SYSTEM}/etc/bluetooth/network.conf ${DST_SYSTEM}/etc/bluetooth/network.conf
+sudo chown $USER ${DST_SYSTEM}/etc/bluetooth/network.conf
+sudo chown :$USER ${DST_SYSTEM}/etc/bluetooth/network.conf
+sudo cp -a ${SRC_SYSTEM}/etc/dbus.conf ${DST_SYSTEM}/etc/dbus.conf
+sudo chown $USER ${DST_SYSTEM}/etc/dbus.conf
+sudo chown :$USER ${DST_SYSTEM}/etc/dbus.conf
 cp -a ${SRC_SYSTEM}/etc/permissions/com.google.android.maps.xml ${DST_SYSTEM}/etc/permissions/com.google.android.maps.xml
 cp -a ${SRC_SYSTEM}/etc/permissions/com.google.android.media.effects.xml ${DST_SYSTEM}/etc/permissions/com.google.android.media.effects.xml
 cp -a ${SRC_SYSTEM}/etc/permissions/com.google.widevine.software.drm.xml ${DST_SYSTEM}/etc/permissions/com.google.widevine.software.drm.xml
 cp -a ${SRC_SYSTEM}/etc/permissions/features.xml ${DST_SYSTEM}/etc/permissions/features.xml
-cp -a ${SRC_SYSTEM}/framework/com.google.android.maps.jar ${DST_SYSTEM}/framework/com.google.android.maps.jar
-cp -a ${SRC_SYSTEM}/framework/com.google.android.media.effects.jar ${DST_SYSTEM}/framework/com.google.android.media.effects.jar
-cp -a ${SRC_SYSTEM}/framework/com.google.widevine.software.drm.jar ${DST_SYSTEM}/framework/com.google.widevine.software.drm.jar
 cp -a ${SRC_SYSTEM}/lib/libfilterpack_facedetect.so ${DST_SYSTEM}/lib/libfilterpack_facedetect.so
 cp -a ${SRC_SYSTEM}/lib/libfrsdk.so ${DST_SYSTEM}/lib/libfrsdk.so
 cp -a ${SRC_SYSTEM}/lib/libgcomm_jni.so ${DST_SYSTEM}/lib/libgcomm_jni.so

@@ -65,6 +65,12 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/etc/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml \
 	$(LOCAL_PATH)/proprietary/system/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
 	$(LOCAL_PATH)/proprietary/system/etc/permissions/features.xml:system/etc/permissions/features.xml \
+	$(LOCAL_PATH)/proprietary/system/etc/bluetooth/audio.conf:system/etc/bluetooth/audio.conf \
+	$(LOCAL_PATH)/proprietary/system/etc/bluetooth/auto_pairing.conf:system/etc/bluetooth/auto_pairing.conf \
+	$(LOCAL_PATH)/proprietary/system/etc/bluetooth/input.conf:system/etc/bluetooth/input.conf \
+	$(LOCAL_PATH)/proprietary/system/etc/bluetooth/main.conf:system/etc/bluetooth/main.conf \
+	$(LOCAL_PATH)/proprietary/system/etc/bluetooth/network.conf:system/etc/bluetooth/network.conf \
+	$(LOCAL_PATH)/proprietary/system/etc/dbus.conf:system/etc/dbus.conf \
 	$(LOCAL_PATH)/proprietary/system/framework/com.google.android.maps.jar:system/framework/com.google.android.maps.jar \
 	$(LOCAL_PATH)/proprietary/system/framework/com.google.android.media.effects.jar:system/framework/com.google.android.media.effects.jar \
 	$(LOCAL_PATH)/proprietary/system/framework/com.google.widevine.software.drm.jar:system/framework/com.google.widevine.software.drm.jar \

@@ -26,13 +26,13 @@ PRODUCT_PACKAGES += \
     SetupWizard \
     Street \
     Talk \
-    Velvet \
     Videos \
     VoiceSearchStub \
     GmsCore \
     talkback \
     GoogleEarth
 
+#    Velvet \
 #    Gmail \
 #    YouTube \
 

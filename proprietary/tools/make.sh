@@ -1,10 +1,10 @@
 #!/bin/sh
 
-tar zxf yakju-jro03c-factory-3174c1e5.tgz
-cd yakju-jro03c
-unzip image-yakju-jro03c.zip
+tar zxf yakju-jzo54k-factory-92ff9457.tgz
+cd yakju-jzo54k
+unzip image-yakju-jzo54k.zip
 cd ../
-./simg2img yakju-jro03c/system.img system.ext4.img
+./simg2img yakju-jzo54k/system.img system.ext4.img
 mkdir system
 sudo mount -o loop -t ext4 system.ext4.img system
 sync
@@ -52,6 +52,6 @@ done < ${ODEX_LIST}
 sudo umount system
 rmdir system
 rm -rf tmp
-rm -rf yakju-jro03c
+rm -rf yakju-jzo54k
 rm system.ext4.img
 

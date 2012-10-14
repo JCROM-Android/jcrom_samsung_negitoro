@@ -5,7 +5,6 @@ cp -a ${SRC_SYSTEM}/vendor/firmware/ducati-m3.bin ${DST_SYSTEM}/vendor/firmware/
 cp -a ${SRC_SYSTEM}/vendor/etc/smc_normal_world_android_cfg.ini ${DST_SYSTEM}/vendor/etc/smc_normal_world_android_cfg.ini
 cp -a ${SRC_SYSTEM}/vendor/etc/sirfgps.conf ${DST_SYSTEM}/vendor/etc/sirfgps.conf
 cp -a ${SRC_SYSTEM}/vendor/firmware/smc_pa_wvdrm.ift ${DST_SYSTEM}/vendor/firmware/smc_pa_wvdrm.ift
-cp -a ${SRC_SYSTEM}/vendor/firmware/libpn544_fw.so ${DST_SYSTEM}/vendor/firmware/libpn544_fw.so
 cp -a ${SRC_SYSTEM}/vendor/lib/drm/libdrmwvmplugin.so ${DST_SYSTEM}/vendor/lib/drm/libdrmwvmplugin.so
 cp -a ${SRC_SYSTEM}/vendor/lib/hw/gps.omap4.so ${DST_SYSTEM}/vendor/lib/hw/gps.omap4.so
 cp -a ${SRC_SYSTEM}/vendor/lib/libWVStreamControlAPI_L1.so ${DST_SYSTEM}/vendor/lib/libWVStreamControlAPI_L1.so

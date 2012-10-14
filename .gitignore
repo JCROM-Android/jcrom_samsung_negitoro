@@ -142,7 +142,6 @@ proprietary/system/usr/srec/en-US/offensive_word_normalizer
 proprietary/system/usr/srec/en-US/phonelist
 proprietary/system/usr/srec/en-US/rescoring_lm
 proprietary/system/usr/srec/en-US/symbols
-proprietary/system/vendor/firmware/libpn544_fw.so
 proprietary/system/vendor/lib/drm/libdrmwvmplugin.so
 proprietary/system/vendor/lib/libwvm.so
 proprietary/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin

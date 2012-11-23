@@ -1,12 +1,11 @@
 GmsCore
+ConfigUpdater
+CalendarGoogle
 ChromeBookmarksSyncAdapter
 FaceLock
 GenieWidget
-Gmail
-CalendarGoogle
 GoogleBackupTransport
 GoogleContactsSyncAdapter
-GoogleEars
 GoogleFeedback
 GoogleLoginService
 GooglePartnerSetup
@@ -21,3 +20,4 @@ Talk
 Velvet
 VoiceSearchStub
 YouTube
+GoogleEars

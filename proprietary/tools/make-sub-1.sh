@@ -24,21 +24,15 @@ cp -a ${SRC_SYSTEM}/media/video/Sunset.480p.mp4 ${DST_SYSTEM}/media/video/Sunset
 cp -a ${SRC_SYSTEM}/media/LMprec_508.emd ${DST_SYSTEM}/media/LMprec_508.emd
 cp -a ${SRC_SYSTEM}/media/PFFprec_600.emd ${DST_SYSTEM}/media/PFFprec_600.emd
 cp -a ${SRC_SYSTEM}/media/bootanimation.zip ${DST_SYSTEM}/media/bootanimation.zip
-sudo cp -a ${SRC_SYSTEM}/etc/bluetooth/audio.conf ${DST_SYSTEM}/etc/bluetooth/audio.conf
-sudo chown $USER ${DST_SYSTEM}/etc/bluetooth/audio.conf
-sudo chown :$USER ${DST_SYSTEM}/etc/bluetooth/audio.conf
-sudo cp -a ${SRC_SYSTEM}/etc/bluetooth/auto_pairing.conf ${DST_SYSTEM}/etc/bluetooth/auto_pairing.conf
-sudo chown $USER ${DST_SYSTEM}/etc/bluetooth/auto_pairing.conf
-sudo chown :$USER ${DST_SYSTEM}/etc/bluetooth/auto_pairing.conf
-sudo cp -a ${SRC_SYSTEM}/etc/bluetooth/input.conf ${DST_SYSTEM}/etc/bluetooth/input.conf
-sudo chown $USER ${DST_SYSTEM}/etc/bluetooth/input.conf
-sudo chown :$USER ${DST_SYSTEM}/etc/bluetooth/input.conf
-sudo cp -a ${SRC_SYSTEM}/etc/bluetooth/main.conf ${DST_SYSTEM}/etc/bluetooth/main.conf
-sudo chown $USER ${DST_SYSTEM}/etc/bluetooth/main.conf
-sudo chown :$USER ${DST_SYSTEM}/etc/bluetooth/main.conf
-sudo cp -a ${SRC_SYSTEM}/etc/bluetooth/network.conf ${DST_SYSTEM}/etc/bluetooth/network.conf
-sudo chown $USER ${DST_SYSTEM}/etc/bluetooth/network.conf
-sudo chown :$USER ${DST_SYSTEM}/etc/bluetooth/network.conf
+sudo cp -a ${SRC_SYSTEM}/etc/bluetooth/auto_pair_devlist.conf ${DST_SYSTEM}/etc/bluetooth/auto_pair_devlist.conf
+sudo chown $USER ${DST_SYSTEM}/etc/bluetooth/auto_pair_devlist.conf
+sudo chown :$USER ${DST_SYSTEM}/etc/bluetooth/auto_pair_devlist.conf
+sudo cp -a ${SRC_SYSTEM}/etc/bluetooth/bt_did.conf ${DST_SYSTEM}/etc/bluetooth/bt_did.conf
+sudo chown $USER ${DST_SYSTEM}/etc/bluetooth/bt_did.conf
+sudo chown :$USER ${DST_SYSTEM}/etc/bluetooth/bt_did.conf
+sudo cp -a ${SRC_SYSTEM}/etc/bluetooth/bt_stack.conf ${DST_SYSTEM}/etc/bluetooth/bt_stack.conf
+sudo chown $USER ${DST_SYSTEM}/etc/bluetooth/bt_stack.conf
+sudo chown :$USER ${DST_SYSTEM}/etc/bluetooth/bt_stack.conf
 sudo cp -a ${SRC_SYSTEM}/etc/dbus.conf ${DST_SYSTEM}/etc/dbus.conf
 sudo chown $USER ${DST_SYSTEM}/etc/dbus.conf
 sudo chown :$USER ${DST_SYSTEM}/etc/dbus.conf
@@ -51,15 +45,16 @@ cp -a ${SRC_SYSTEM}/lib/libfrsdk.so ${DST_SYSTEM}/lib/libfrsdk.so
 cp -a ${SRC_SYSTEM}/lib/libgcomm_jni.so ${DST_SYSTEM}/lib/libgcomm_jni.so
 cp -a ${SRC_SYSTEM}/lib/libgoogle_recognizer_jni.so ${DST_SYSTEM}/lib/libgoogle_recognizer_jni.so
 cp -a ${SRC_SYSTEM}/lib/libspeexwrapper.so ${DST_SYSTEM}/lib/libspeexwrapper.so
-cp -a ${SRC_SYSTEM}/lib/libvideochat_jni.so ${DST_SYSTEM}/lib/libvideochat_jni.so
-cp -a ${SRC_SYSTEM}/lib/libvideochat_stabilize.so ${DST_SYSTEM}/lib/libvideochat_stabilize.so
-cp -a ${SRC_SYSTEM}/lib/libvoicesearch.so ${DST_SYSTEM}/lib/libvoicesearch.so
 cp -a ${SRC_SYSTEM}/lib/libfacelock_jni.so ${DST_SYSTEM}/lib/libfacelock_jni.so
 cp -a ${SRC_SYSTEM}/lib/libearthmobile.so ${DST_SYSTEM}/lib/libearthmobile.so
 cp -a ${SRC_SYSTEM}/lib/libjni_eglfence.so ${DST_SYSTEM}/lib/libjni_eglfence.so
 cp -a ${SRC_SYSTEM}/lib/libjni_mosaic.so ${DST_SYSTEM}/lib/libjni_mosaic.so
 cp -a ${SRC_SYSTEM}/lib/libpatts_engine_jni_api.so ${DST_SYSTEM}/lib/libpatts_engine_jni_api.so
 cp -a ${SRC_SYSTEM}/lib/libvorbisencoder.so ${DST_SYSTEM}/lib/libvorbisencoder.so
+cp -a ${SRC_SYSTEM}/lib/libgtalk_jni.so ${DST_SYSTEM}/lib/libgtalk_jni.so
+cp -a ${SRC_SYSTEM}/lib/libgtalk_stabilize.so ${DST_SYSTEM}/lib/libgtalk_stabilize.so
+cp -a ${SRC_SYSTEM}/lib/libjni_latinimegoogle.so ${DST_SYSTEM}/lib/libjni_latinimegoogle.so
+cp -a ${SRC_SYSTEM}/lib/liblightcycle.so ${DST_SYSTEM}/lib/liblightcycle.so
 cp -a ${SRC_SYSTEM}/etc/preferred-apps/google.xml ${DST_SYSTEM}/etc/preferred-apps/google.xml
 cp -a ${SRC_SYSTEM}/etc/updatecmds/google_generic_update.txt ${DST_SYSTEM}/etc/updatecmds/google_generic_update.txt
 cp -a ${SRC_SYSTEM}/media/audio/ringtones/RadiationOrchestration.ogg ${DST_SYSTEM}/media/audio/ringtones/RadiationOrchestration.ogg

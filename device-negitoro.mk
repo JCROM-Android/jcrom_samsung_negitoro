@@ -3,13 +3,12 @@ LOCAL_PATH := jcrom/samsung/negitoro
 PRODUCT_PACKAGES += \
     Books \
     ChromeBookmarksSyncAdapter \
-    Currents \
+    ConfigUpdater \
     FaceLock \
-    CalendarGoogle \
     GenieWidget \
+    GoogleEars \
     GoogleBackupTransport \
     GoogleContactsSyncAdapter \
-    GoogleEars \
     GoogleFeedback \
     GoogleLoginService \
     GooglePartnerSetup \
@@ -18,7 +17,6 @@ PRODUCT_PACKAGES += \
     Maps \
     Magazines \
     MediaUploader \
-    Music2 \
     NetworkLocation \
     OneTimeInitializer \
     Phonesky \
@@ -26,15 +24,23 @@ PRODUCT_PACKAGES += \
     SetupWizard \
     Street \
     Talk \
-    Videos \
     VoiceSearchStub \
     GmsCore \
-    talkback \
-    GoogleEarth
+    talkback
 
+#    CalendarProvider \
+#    CalendarGoogle \
+#    Videos \
+#    Currents \
+#    Music2 \
 #    Velvet \
-#    Gmail \
+#    Gmail2 \
 #    YouTube \
+#    GoogleEarth
+
+PRODUCT_PACKAGES += \
+    Gallery2 \
+    Calendar
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/vendor/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin \
@@ -64,11 +70,9 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/etc/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml \
 	$(LOCAL_PATH)/proprietary/system/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
 	$(LOCAL_PATH)/proprietary/system/etc/permissions/features.xml:system/etc/permissions/features.xml \
-	$(LOCAL_PATH)/proprietary/system/etc/bluetooth/audio.conf:system/etc/bluetooth/audio.conf \
-	$(LOCAL_PATH)/proprietary/system/etc/bluetooth/auto_pairing.conf:system/etc/bluetooth/auto_pairing.conf \
-	$(LOCAL_PATH)/proprietary/system/etc/bluetooth/input.conf:system/etc/bluetooth/input.conf \
-	$(LOCAL_PATH)/proprietary/system/etc/bluetooth/main.conf:system/etc/bluetooth/main.conf \
-	$(LOCAL_PATH)/proprietary/system/etc/bluetooth/network.conf:system/etc/bluetooth/network.conf \
+	$(LOCAL_PATH)/proprietary/system/etc/bluetooth/auto_pair_devlist.conf:system/etc/bluetooth/auto_pair_devlist.conf \
+	$(LOCAL_PATH)/proprietary/system/etc/bluetooth/bt_did.conf:system/etc/bluetooth/bt_did.conf \
+	$(LOCAL_PATH)/proprietary/system/etc/bluetooth/bt_stack.conf:system/etc/bluetooth/bt_stack.conf \
 	$(LOCAL_PATH)/proprietary/system/etc/dbus.conf:system/etc/dbus.conf \
 	$(LOCAL_PATH)/proprietary/system/framework/com.google.android.maps.jar:system/framework/com.google.android.maps.jar \
 	$(LOCAL_PATH)/proprietary/system/framework/com.google.android.media.effects.jar:system/framework/com.google.android.media.effects.jar \
@@ -78,15 +82,16 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/lib/libgcomm_jni.so:system/lib/libgcomm_jni.so \
 	$(LOCAL_PATH)/proprietary/system/lib/libgoogle_recognizer_jni.so:system/lib/libgoogle_recognizer_jni.so \
 	$(LOCAL_PATH)/proprietary/system/lib/libspeexwrapper.so:system/lib/libspeexwrapper.so \
-	$(LOCAL_PATH)/proprietary/system/lib/libvideochat_jni.so:system/lib/libvideochat_jni.so \
-	$(LOCAL_PATH)/proprietary/system/lib/libvideochat_stabilize.so:system/lib/libvideochat_stabilize.so \
-	$(LOCAL_PATH)/proprietary/system/lib/libvoicesearch.so:system/lib/libvoicesearch.so \
 	$(LOCAL_PATH)/proprietary/system/lib/libfacelock_jni.so:system/lib/libfacelock_jni.so \
 	$(LOCAL_PATH)/proprietary/system/lib/libearthmobile.so:system/lib/libearthmobile.so \
 	$(LOCAL_PATH)/proprietary/system/lib/libjni_eglfence.so:system/lib/libjni_eglfence.so \
 	$(LOCAL_PATH)/proprietary/system/lib/libjni_mosaic.so:system/lib/libjni_mosaic.so \
 	$(LOCAL_PATH)/proprietary/system/lib/libpatts_engine_jni_api.so:system/lib/libpatts_engine_jni_api.so \
 	$(LOCAL_PATH)/proprietary/system/lib/libvorbisencoder.so:system/lib/libvorbisencoder.so \
+	$(LOCAL_PATH)/proprietary/system/lib/libgtalk_jni.so:system/lib/libgtalk_jni.so \
+	$(LOCAL_PATH)/proprietary/system/lib/libgtalk_stabilize.so:system/lib/libgtalk_stabilize.so \
+	$(LOCAL_PATH)/proprietary/system/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
+	$(LOCAL_PATH)/proprietary/system/lib/liblightcycle.so:system/lib/liblightcycle.so \
 	$(LOCAL_PATH)/proprietary/system/etc/preferred-apps/google.xml:system/etc/preferred-apps/google.xml \
 	$(LOCAL_PATH)/proprietary/system/etc/updatecmds/google_generic_update.txt:system/etc/updatecmds/google_generic_update.txt \
 	$(LOCAL_PATH)/proprietary/system/media/audio/ringtones/RadiationOrchestration.ogg:system/media/audio/ringtones/RadiationOrchestration.ogg \
@@ -124,4 +129,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/usr/srec/en-US/google_hotword_clg:system/usr/srec/en-US/google_hotword_clg \
 	$(LOCAL_PATH)/proprietary/system/usr/srec/en-US/embed_phone_nn_state_sym:system/usr/srec/en-US/embed_phone_nn_state_sym \
 	$(LOCAL_PATH)/proprietary/system/usr/srec/en-US/grammar.config:system/usr/srec/en-US/grammar.config
+
+$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage8.mk)
 

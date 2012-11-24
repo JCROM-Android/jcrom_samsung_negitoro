@@ -39,8 +39,7 @@ PRODUCT_PACKAGES += \
 #    GoogleEarth
 
 PRODUCT_PACKAGES += \
-    Gallery2 \
-    Calendar
+    Gallery2
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/vendor/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin \

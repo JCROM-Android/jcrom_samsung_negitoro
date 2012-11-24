@@ -22,7 +22,7 @@ java -jar apktool.jar d ${SYSTEM_FOLDER}/app/${READ_BUF}.apk "./apk.out"
 mkdir ./apk.out/smali
 cp -a ./out/* ./apk.out/smali/
 java -jar apktool.jar b "./apk.out" "./tmp/app/${READ_BUF}-unsigned.apk"
-java -jar signapk.jar -w testkey.x509.pem testkey.pk8 ./tmp/app/${READ_BUF}-unsigned.apk ./tmp/app/${READ_BUF}.apk
+java -jar signapk.jar -w platform.x509.pem platform.pk8 ./tmp/app/${READ_BUF}-unsigned.apk ./tmp/app/${READ_BUF}.apk
 rm ./tmp/app/${READ_BUF}-unsigned.apk
 rm -rf ./apk.out
 rm -rf ./out
@@ -39,7 +39,7 @@ java -jar apktool.jar d ${SYSTEM_FOLDER}/framework/${READ_BUF}.jar "./apk.out"
 mkdir ./apk.out/smali
 cp -a ./out/* ./apk.out/smali/
 java -jar apktool.jar b "./apk.out" "./tmp/framework/${READ_BUF}-unsigned.jar"
-java -jar signapk.jar -w testkey.x509.pem testkey.pk8 ./tmp/framework/${READ_BUF}-unsigned.jar ./tmp/framework/${READ_BUF}.jar
+java -jar signapk.jar -w platform.x509.pem platform.pk8 ./tmp/framework/${READ_BUF}-unsigned.jar ./tmp/framework/${READ_BUF}.jar
 rm ./tmp/framework/${READ_BUF}-unsigned.jar
 rm -rf ./apk.out
 rm -rf ./out

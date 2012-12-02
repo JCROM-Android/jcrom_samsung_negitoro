@@ -1,10 +1,11 @@
 #!/bin/sh
 
-tar zxf yakju-jop40c-factory-267d243c.tgz
-cd yakju-jop40c
-unzip image-yakju-jop40c.zip
+wget -nc -q https://dl.google.com/dl/android/aosp/yakju-jop40d-factory-279cdc5d.tgz
+tar zxf yakju-jop40d-factory-279cdc5d.tgz
+cd yakju-jop40d
+unzip image-yakju-jop40d.zip
 cd ../
-./simg2img yakju-jop40c/system.img system.ext4.img
+./simg2img yakju-jop40d/system.img system.ext4.img
 mkdir system
 sudo mount -o loop -t ext4 system.ext4.img system
 sync
@@ -46,12 +47,13 @@ rm -rf ./out
 rm -rf ~/apktool
 done < ${ODEX_LIST}
 
+./copy-gapps.sh
 ./make-sub-1.sh
 ./make-sub-2.sh
 
 sudo umount system
 rmdir system
 rm -rf tmp
-rm -rf yakju-jop40c
+rm -rf yakju-jop40d
 rm system.ext4.img
 

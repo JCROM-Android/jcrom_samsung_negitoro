@@ -5,6 +5,7 @@ PRODUCT_PACKAGES += \
     ChromeBookmarksSyncAdapter \
     ConfigUpdater \
     FaceLock \
+    GalleryGoogle \
     GenieWidget \
     GoogleEars \
     GoogleBackupTransport \
@@ -38,8 +39,8 @@ PRODUCT_PACKAGES += \
 #    YouTube \
 #    GoogleEarth
 
-PRODUCT_PACKAGES += \
-    Gallery2
+#PRODUCT_PACKAGES += \
+#    Gallery2
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/vendor/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin \

@@ -33,4 +33,5 @@ cp -a ${SRC_SYSTEM}/app/Talk.apk ${DST_SYSTEM}/app/Talk/Talk.apk
 cp -a ${SRC_SYSTEM}/app/VoiceSearchStub.apk ${DST_SYSTEM}/app/VoiceSearchStub/VoiceSearchStub.apk
 cp -a ${SRC_SYSTEM}/app/CalendarGoogle.apk ${DST_SYSTEM}/app/CalendarGoogle/CalendarGoogle.apk
 cp -a ${SRC_SYSTEM}/app/Music2.apk ${DST_SYSTEM}/app/Music2/Music2.apk
+cp -a ${SRC_SYSTEM}/app/GalleryGoogle.apk ${DST_SYSTEM}/app/GalleryGoogle/GalleryGoogle.apk
 

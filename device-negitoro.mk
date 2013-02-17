@@ -25,7 +25,7 @@ PRODUCT_PACKAGES += \
     Street \
     Talk \
     VoiceSearchStub \
-    GmsCore \
+    PrebuiltGmsCore \
     talkback
 
 #    CalendarProvider \
@@ -80,6 +80,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/lib/libfilterpack_facedetect.so:system/lib/libfilterpack_facedetect.so \
 	$(LOCAL_PATH)/proprietary/system/lib/libfrsdk.so:system/lib/libfrsdk.so \
 	$(LOCAL_PATH)/proprietary/system/lib/libgcomm_jni.so:system/lib/libgcomm_jni.so \
+	$(LOCAL_PATH)/proprietary/system/lib/libgoggles_clientvision.so:system/lib/libgoggles_clientvision.so \
 	$(LOCAL_PATH)/proprietary/system/lib/libgoogle_recognizer_jni.so:system/lib/libgoogle_recognizer_jni.so \
 	$(LOCAL_PATH)/proprietary/system/lib/libspeexwrapper.so:system/lib/libspeexwrapper.so \
 	$(LOCAL_PATH)/proprietary/system/lib/libfacelock_jni.so:system/lib/libfacelock_jni.so \

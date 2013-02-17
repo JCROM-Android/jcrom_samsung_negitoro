@@ -1,4 +1,3 @@
-GmsCore
 ConfigUpdater
 CalendarGoogle
 ChromeBookmarksSyncAdapter
@@ -19,5 +18,4 @@ SetupWizard
 Talk
 Velvet
 VoiceSearchStub
-YouTube
 GoogleEars

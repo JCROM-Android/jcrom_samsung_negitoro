@@ -1,11 +1,11 @@
 #!/bin/sh
 
-wget -nc -q https://dl.google.com/dl/android/aosp/yakju-jop40d-factory-279cdc5d.tgz
-tar zxf yakju-jop40d-factory-279cdc5d.tgz
-cd yakju-jop40d
-unzip image-yakju-jop40d.zip
+wget -nc -q https://dl.google.com/dl/android/aosp/yakju-jdq39-factory-b2ebb5f3.tgz
+tar zxf yakju-jdq39-factory-b2ebb5f3.tgz
+cd yakju-jdq39
+unzip image-yakju-jdq39.zip
 cd ../
-./simg2img yakju-jop40d/system.img system.ext4.img
+./simg2img yakju-jdq39/system.img system.ext4.img
 mkdir system
 sudo mount -o loop -t ext4 system.ext4.img system
 sync
@@ -50,10 +50,11 @@ done < ${ODEX_LIST}
 ./copy-gapps.sh
 ./make-sub-1.sh
 ./make-sub-2.sh
+./make-sub-3.sh
 
 sudo umount system
 rmdir system
 rm -rf tmp
-rm -rf yakju-jop40d
+rm -rf yakju-jdq39
 rm system.ext4.img
 

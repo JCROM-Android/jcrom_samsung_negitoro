@@ -1,5 +1,6 @@
 proprietary/tools/yakju-jop40c-factory-267d243c.tgz
 proprietary/tools/yakju-jop40d-factory-279cdc5d.tgz
+proprietary/tools/yakju-jdq39-factory-b2ebb5f3.tgz
 proprietary/tools/log.txt
 proprietary/system/lib/libgcomm_jni.so
 proprietary/system/lib/liblightcycle.so
@@ -111,4 +112,6 @@ proprietary/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_det
 proprietary/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin
 proprietary/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin
 proprietary/system/vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N/full_model.bin
+proprietary/system/app/GmsCore/PrebuiltGmsCore.apk
+proprietary/system/lib/libgoggles_clientvision.so
 

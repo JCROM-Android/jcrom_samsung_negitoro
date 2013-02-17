@@ -43,6 +43,7 @@ cp -a ${SRC_SYSTEM}/etc/permissions/features.xml ${DST_SYSTEM}/etc/permissions/f
 cp -a ${SRC_SYSTEM}/lib/libfilterpack_facedetect.so ${DST_SYSTEM}/lib/libfilterpack_facedetect.so
 cp -a ${SRC_SYSTEM}/lib/libfrsdk.so ${DST_SYSTEM}/lib/libfrsdk.so
 cp -a ${SRC_SYSTEM}/lib/libgcomm_jni.so ${DST_SYSTEM}/lib/libgcomm_jni.so
+cp -a ${SRC_SYSTEM}/lib/libgoggles_clientvision.so ${DST_SYSTEM}/lib/libgoggles_clientvision.so
 cp -a ${SRC_SYSTEM}/lib/libgoogle_recognizer_jni.so ${DST_SYSTEM}/lib/libgoogle_recognizer_jni.so
 cp -a ${SRC_SYSTEM}/lib/libspeexwrapper.so ${DST_SYSTEM}/lib/libspeexwrapper.so
 cp -a ${SRC_SYSTEM}/lib/libfacelock_jni.so ${DST_SYSTEM}/lib/libfacelock_jni.so

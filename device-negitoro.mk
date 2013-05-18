@@ -23,11 +23,11 @@ PRODUCT_PACKAGES += \
     PlusOne \
     SetupWizard \
     Street \
-    Talk \
     VoiceSearchStub \
     PrebuiltGmsCore \
     talkback
 
+#    Talk \
 #    CalendarProvider \
 #    CalendarGoogle \
 #    Videos \
